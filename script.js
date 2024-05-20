@@ -17,16 +17,16 @@ expensiveTaskBtn.addEventListener('click', expensiveOperation)
 function expensiveOperation() {
     console.log('loading')
 
-    // without web worker - running expensive operation in the main thread.
+    // without web worker - running expensive operation in the main thread --- START
     // let result = expensiveFun()
     // expensiveResult.innerText = result;
-    // without web worker - running expensive operation in the main thread.
+    // without web worker - running expensive operation in the main thread --- END
 
 // -------------------------------------------------------------------------------------------
 
-    // with Web worker
+    // with Web worker --- START
         callWebWoker();
-    // with Web worker
+    // with Web worker --- END
 }
 
 function expensiveFun() {
